@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Camera</title>
+  <link rel="stylesheet" href="cam.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎥 Live Camera Feed</h1>
+
+    <div class="video-wrapper">
+      <video id="cameraFeed" autoplay playsinline></video>
+    </div>
+
+    <button id="captureBtn">📸 Prendre une photo</button>
+
+    <!-- Pour affichage de la capture -->
+    <div id="previewContainer">
+      <h2>📷 Aperçu de la photo</h2>
+      <img id="photoPreview" src="" alt="Aperçu" />
+      <a id="downloadLink" href="#" download="capture.png">💾 Télécharger l'image</a>
+    </div>
+
+    <!-- Canvas caché pour la capture -->
+    <canvas id="canvas" style="display: none;"></canvas>
+  </div>
+
+  <script src="cam.js">
+  </script>
+</body>
+</html>
